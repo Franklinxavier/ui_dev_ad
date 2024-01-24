@@ -29,5 +29,7 @@
 }
 
 .section-story {
+  position: relative;
+  z-index: 1;
   padding: 15rem 0;
 }

@@ -318,7 +318,7 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   font-size: 1.6rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   transform: skewX(-12deg); }
   .story__shape {
     width: 15rem;
@@ -355,6 +355,19 @@ body {
   .story:hover .story__img {
     transform: scale(1);
     filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .15; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .row {
   max-width: 114rem;
@@ -502,6 +515,8 @@ body {
   margin-top: -10rem; }
 
 .section-story {
+  position: relative;
+  z-index: 1;
   padding: 15rem 0; }
 
 /*
